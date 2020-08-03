@@ -182,22 +182,22 @@ ul {
 }
 
 /*----------------------------------------------------------------------------*/
-/*------------------------------ Advertising ---------------------------------*/
+/*------------------------------ Green Office --------------------------------*/
 /*----------------------------------------------------------------------------*/
-.advertising {
+.office {
   display: block;
   width: 100%;
   height: 350px;
-  background: url('./img/advertising.png') no-repeat center center/cover;
+  background: url('./img/office.png') no-repeat center center/cover;
   margin-bottom: 1.25rem;
 }
 
-.advertising .content {
+.office .content {
   width: 60%;
   padding: 6.25rem 0 0 1.875rem;
 }
 
-.advertising p {
+.office p {
   margin: 0.625rem 0 1.25rem 0;
 }
 
@@ -313,16 +313,16 @@ ul {
   .home-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-  .advertising h2 {
+  .office h2 {
     margin-bottom: 1.25rem;
   }
   .showcase,
-  .advertising,
+  .office,
   .explore {
     width: 110vw;
     transform: translateX(-10%);
   }
-  .advertising .content {
+  .office .content {
     padding: 5rem 0 0 7rem;
   }
   .explore .content {
@@ -383,10 +383,10 @@ ul {
   .home-cards {
     grid-template-columns: 1fr;
   }
-  .advertising p {
+  .office p {
     display: none;
   }
-  .advertising .content {
+  .office .content {
     padding: 3.5rem 0 0 4.5rem;
   }
   .explore .content {
