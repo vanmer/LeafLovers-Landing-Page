@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------- Global Styling -------------------------------*/
+/*----------------------------------------------------------------------------*/
+:root {
+  --primary-color: #fff;
+  --secondary-color: #262626;
+  --third-color: #000;
+  --fourth-color: #0067b8;
+  --fifth-color: #333;
+  --sixth-color: #f4f4f4;
+  --seventh-color: #f2f2f2;
+  --eightth-color: #616161;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;;
+  background: var(--primary-color);
+  color: var(--third-color);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/*----------------------------------------------------------------------------*/
+/*------------------------------- Navigation ---------------------------------*/
+/*----------------------------------------------------------------------------*/
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.6rem;
+  z-index: 20;
+}
+.menu-btn i {
+  font-size: 1.23rem;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 1.25rem 0;
+  font-size: 0.8rem;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 0.625em;
+}
+
+.main-nav ul li a {
+  padding-bottom: 0.4rem;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.main-nav .main-menu {
+  flex: 1;
+  margin-left: 0.625rem;
+  margin-bottom: -0.4rem;
+}
+
+.main-nav .logo {
+  width: 110px;
+  margin-right: 1.25rem;
+}
+
+.main-nav i {
+  font-size: 1rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- Buttons -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.dark {
+  color: var(--primary-color);
+}
+
+.dark .btn {
+  color: var(--fifth-color);
+  background: var(--sixth-color);
+}
+
+/*----------------------------------------------------------------------------*/
+/*--------------------------------- Showcase ---------------------------------*/
+/*----------------------------------------------------------------------------*/
+.showcase {
+  width: 100%;
+  height: 400px;
+  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 3.125rem;
+  margin-bottom: 1.25rem;
+  z-index: 10;
+  color: var(--primary-color);
+}
+
+.showcase h2, .showcase p {
+  margin-bottom: 0.625rem;
+}
+
+.showcase .btn {
+  margin-top: 1.25rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/*------------------------------- Home Cards ---------------------------------*/
+/*----------------------------------------------------------------------------*/
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.home-cards img {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.home-cards h3 {
+  margin-bottom: 0.2rem;
+}
+
+.home-cards a {
+  display: inline-block;
+  padding-top: 0.625rem;
+  color: var(--fourth-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.home-cards a:hover i {
+  margin-left: 0.625rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/*------------------------------ Advertising ---------------------------------*/
+/*----------------------------------------------------------------------------*/
+.advertising {
+  width: 100%;
+  height: 350px;
+  background: url('./img/advertising.jpg') no-repeat center center/cover;
+  margin-bottom: 1.25rem;
+}
+
+.advertising .content {
+  width: 60%;
+  padding: 6.25rem 0 0 1.875rem;
+}
+
+.advertising p {
+  margin: 0.625rem 0 1.25rem 0;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- Explore -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+.explore {
+  width: 100%;
+  height: 350px;
+  background: url('./img/explore.jpg') no-repeat center center/cover;
+  margin-bottom: 1.25rem;
+}
+
+.explore .content {
+  width: 55%;
+  padding: 6.25rem 0 0 1.875rem;
+}
+
+.explore p {
+  margin: 0.625rem 0 1.25rem 0;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- Follow ------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0 2rem;
+}
+
+.follow * {
+  margin-right: 0.625rem;
+}
+
+.follow i {
+  font-size: 1.6rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- Links -------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.links {
+  background: var(--seventh-color);
+  color: var(--eightth-color);
+  font-size: 0.65rem;
+  padding: 2.1875rem 0;
+}
+
+.links-inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1100px;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+}
+
+.links li {
+  line-height: 2.8;
+}
+
+/*----------------------------------------------------------------------------*/
+/*------------------------------- Footer -------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.footer {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 0.66rem;
+  padding: 1.25rem 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .country {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer .country i {
+  margin-right: 0.625rem;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin-right: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/*------------------------------ Media Queries -------------------------------*/
+/*----------------------------------------------------------------------------*/
+@media(max-width: 1080px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advertising h2 {
+    margin-bottom: 1.25rem;
+  }
+  .showcase,
+  .advertising,
+  .explore {
+    width: 110vw;
+    transform: translateX(-10%);
+  }
+  .advertising .content {
+    padding: 5rem 0 0 7rem;
+  }
+  .explore .content {
+    padding: 5rem 0 0 7rem;
+  }
+  .links {
+    padding: 2.1875rem 1.6rem;
+  }
+  .links .links-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer {
+    padding: 0 1.6rem;
+  }
+  .footer-inner {
+    display: block;
+
+  }
+  .footer ul {
+    margin-top: -0.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn:hover {
+    opacity: 0.9;
+  }
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--seventh-color);
+    width: 100%;
+    height: auto;
+    z-index: 20;
+    transform: translateX(-500rem);
+    margin-top: 60px;
+  }
+  .main-nav ul.main-menu li {
+    padding: 1rem 1rem 1rem 1rem;
+    border-bottom: 1px solid var(--fifth-color);
+    text-align: center;
+  }
+  .main-nav ul.main-menu.show {
+    transform: translateX(-0.6rem);
+  }
+  .main-nav .logo {
+    margin: 0 auto;
+  }
+  .showcase p {
+    font-size: 0.82rem;
+  }
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+  .advertising p {
+    display: none;
+  }
+  .advertising .content {
+    padding: 3.5rem 0 0 4.5rem;
+  }
+  .explore .content {
+    padding: 3.5rem 0 0 4.5rem;
+  }
+  .explore h2 {
+    margin-bottom: 1rem;
+  }
+  .explore p {
+    display: none;
+  }
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+}
