@@ -185,6 +185,7 @@ ul {
 /*------------------------------ Advertising ---------------------------------*/
 /*----------------------------------------------------------------------------*/
 .advertising {
+  display: block;
   width: 100%;
   height: 350px;
   background: url('./img/advertising.png') no-repeat center center/cover;
