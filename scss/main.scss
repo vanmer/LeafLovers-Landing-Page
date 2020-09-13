@@ -206,9 +206,6 @@ ul {
   }
 }
 
-/*----------------------------------------------------------------------------*/
-/*-------------------------------- Links -------------------------------------*/
-/*----------------------------------------------------------------------------*/
 .links {
   background: $seventh-color;
   color: $eightth-color;
@@ -231,43 +228,40 @@ ul {
   }
 }
 
-/*----------------------------------------------------------------------------*/
-/*------------------------------- Footer -------------------------------------*/
-/*----------------------------------------------------------------------------*/
 .footer {
-  background: #f2f2f2;
-  color: #616161;
+  background: $seventh-color;
+  color: $eightth-color;
   font-size: 0.66rem;
   padding: 1.25rem 0;
-}
 
-.footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.footer .country {
-  margin-bottom: 1.25rem;
-  display: flex;
-  align-items: center;
-}
+    .country {
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
 
-.footer .country i {
-  margin-right: 0.625rem;
-}
+      i {
+        margin-right: 0.625rem;
+      }
+    }
 
-.footer ul {
-  display: flex;
-  flex-wrap: wrap;
-}
+    ul {
+      display: flex;
+      flex-wrap: wrap;
 
-.footer li {
-  margin-right: 1.875rem;
-  margin-bottom: 1.25rem;
+      li {
+        margin-right: 1.875rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
 }
 
 @import "media";
