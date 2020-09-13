@@ -1,4 +1,4 @@
-@import 'config';
+@import "config";
 
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: var(--secondary-color);
+  color: $secondary-color;
   text-decoration: none;
 }
 
@@ -82,9 +82,6 @@ ul {
   }
 }
 
-/*----------------------------------------------------------------------------*/
-/*-------------------------------- Buttons -----------------------------------*/
-/*----------------------------------------------------------------------------*/
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -92,21 +89,21 @@ ul {
   font-size: 1rem;
   font-weight: 600;
   padding: 0.625rem 1.25rem;
-  color: var(--primary-color);
-  background: var(--secondary-color);
-}
+  color: $primary-color;
+  background: $secondary-color;
 
-.btn:hover {
-  opacity: 0.9;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .dark {
-  color: var(--primary-color);
-}
+  color: $primary-color;
 
-.dark .btn {
-  color: var(--fifth-color);
-  background: var(--sixth-color);
+  .btn {
+    color: $fifth-color;
+    background: $sixth-color;
+  }
 }
 
 /*----------------------------------------------------------------------------*/
@@ -115,7 +112,7 @@ ul {
 .showcase {
   width: 100%;
   height: 400px;
-  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,16 +121,17 @@ ul {
   padding-bottom: 3.125rem;
   margin-bottom: 1.25rem;
   z-index: 10;
-  color: var(--primary-color);
+  color: $primary-color;
+
+  h2, p {
+    margin-bottom: 0.625rem;
+  }
+
+  .btn {
+    margin-top: 1.25rem;
+  }
 }
 
-.showcase h2, .showcase p {
-  margin-bottom: 0.625rem;
-}
-
-.showcase .btn {
-  margin-top: 1.25rem;
-}
 
 /*----------------------------------------------------------------------------*/
 /*------------------------------- Home Cards ---------------------------------*/
@@ -173,7 +171,7 @@ ul {
   display: block;
   width: 100%;
   height: 350px;
-  background: url('../img/office.png') no-repeat center center/cover;
+  background: url("../img/office.png") no-repeat center center/cover;
   margin-bottom: 1.25rem;
 }
 
@@ -192,7 +190,7 @@ ul {
 .explore {
   width: 100%;
   height: 350px;
-  background: url('../img/explore.jpg') no-repeat center center/cover;
+  background: url("../img/explore.jpg") no-repeat center center/cover;
   margin-bottom: 1.25rem;
 }
 
@@ -287,4 +285,4 @@ ul {
   margin-bottom: 1.25rem;
 }
 
-@import 'media';
+@import "media";
